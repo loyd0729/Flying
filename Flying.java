@@ -7,6 +7,7 @@ public class Flying {
 	private String engine;
 	private String state;
 	
+	//Constructor
 	public Flying() {
 		pilot = "sitting";
 		numOfPilot = 2;
@@ -16,6 +17,7 @@ public class Flying {
 		
 	}
 	
+	//Parametized Constructor
 	public Flying(String pilot, int numOfPilot, int passengers, String engine, String state) {
 		this.pilot = pilot;
 		this.numOfPilot = numOfPilot;
@@ -75,6 +77,7 @@ public class Flying {
 		
 	}
 	
+	//functionality
 	public String onAir() {
 		if(pilot.equals("sitting") && (numOfPilot == 2) && 
 				(passengers == 4) && engine.equals("on") && state.equals("took-off")) {
